@@ -10,12 +10,14 @@ import com.sra.inventory.service.domain.ports.output.message.publisher.order.Inv
 import com.sra.inventory.service.domain.ports.output.repository.InventoryRepository;
 import com.sra.inventory.service.domain.ports.output.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
+@Component
 public class InventoryCreateHelper {
     private final InventoryDomainService inventoryDomainService;
 

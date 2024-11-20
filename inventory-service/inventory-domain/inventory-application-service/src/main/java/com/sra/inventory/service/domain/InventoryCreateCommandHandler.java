@@ -6,8 +6,10 @@ import com.sra.inventory.service.domain.event.InventoryCreatedEvent;
 import com.sra.inventory.service.domain.mapper.InventoryDataMapper;
 import com.sra.inventory.service.domain.ports.output.message.publisher.order.InventoryCreatedOrderRequestMessagePublisher;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 @Slf4j
+@Component
 public class InventoryCreateCommandHandler {
 
     private final InventoryCreateHelper inventoryCreateHelper;
